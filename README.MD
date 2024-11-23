@@ -8,7 +8,7 @@ no installation process
 
 ## Usage
 
-this website holds information about couplesresort.ca
+this website holds information about orangepanda_earbuds_assignment
 
 ## Credits
 
