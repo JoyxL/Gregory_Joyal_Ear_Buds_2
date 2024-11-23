@@ -12,7 +12,7 @@ this website holds information about couplesresort.ca
 
 ## Credits
 
-TODO: couplesresort.ca
+TODO: orangepanda.ca
       pexels.com
 
 ## License
