@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/grid.css" rel="stylesheet" type="text/css" />
+    <title>Orange Panda</title>
+  </head>
+
+  <body>
+    <header class="sticky">
+      <div class="logo">
+        <img id="logo" src="images/Group 9.png" alt="earbud_logo" />
+      </div>
+      <nav>
+        <button class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li><a href="">CART</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="">
+        <div id="hero-img">
+          <img src="images/hero_img.png" alt="hero_image" class="heroimg" />
+        </div>
+
+        <model-viewer
+          disable-zoom
+          src="images/gltf-earbuds.gltf"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          tone-mapping="neutral"
+          poster="poster.webp"
+          shadow-intensity="1"
+        >
+          <button
+            class="Hotspot"
+            id="model"
+            slot="hotspot-1"
+            data-position="-202.0272908162121m 589.6766240478738m 419.21862958219435m"
+            data-normal="0.10979698730451273m -0.22000071597132254m 0.9693009370422367m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation" id="hotspot-1"></div></button
+          ><button
+            class="Hotspot"
+            slot="hotspot-2"
+            data-position="-38.48204941606919m 484.3540325843248m 245.88923585401207m"
+            data-normal="0.2345984599876778m -0.01285539266416486m -0.9720073566855656m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation" id="hotspot-2"></div></button
+          ><button
+            class="Hotspot"
+            slot="hotspot-3"
+            data-position="39.65699005958399m 707.0480092327332m 397.27706025337324m"
+            data-normal="0.15697959611121265m 0.09701020728560514m 0.9828257353606309m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation" id="hotspot-3"></div></button
+          ><button
+            class="Hotspot"
+            slot="hotspot-4"
+            data-position="-53.42099926553014m 332.7871812452625m 302.93596739126554m"
+            data-normal="-0.23459845998767778m 0.012855392664164859m 0.9720073566855656m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation" id="hotspot-4"></div>
+          </button>
+          <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+          </div>
+          <button slot="ar-button" id="ar-button">View in your space</button>
+          <div id="ar-prompt">
+            <img src="images/ar_hand_prompt.png" />
+          </div>
+        </model-viewer>
+
+        <div id="welcome">
+          <h2>
+            <span>Orange Panda <br /></span> EARBUDS PRO
+          </h2>
+        </div>
+      </section>
+
+      <div class="col-span-full">
+        <canvas id="explode-view"></canvas>
+      </div>
+
+      <div class="col-span-full">
+        <section id="mobile-tablet-view">
+          <img src="images/xray.png" alt="x-ray view of earbuds" />
+          <img src="images/xray_orginal.png" alt="textured view" />
+        </section>
+        <div id="comparison-con">
+          <div id="xray">
+            <div id="divisor"></div>
+          </div>
+          <input type="range" min="0" max="100" value="50" id="slider" />
+        </div>
+      </div>
+
+      <div id="contact" class="full-width-grid-con">
+        <h2 class="col-span-full">CONTACT US</h2>
+
+        <form class="col-span-full">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="fullname" placeholder="Your fullname" />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Your email" />
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <input
+              id="message"
+              type="text"
+              name="message"
+              placeholder="Write your message..."
+            />
+            <button type="button" class="red-button">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="grid-con col-span-full">
+        <div id="end" class="col-span-full">
+          <img src="images/Group 9.png" alt="logo" />
+          <p>&copy; 2024 copyright Orangepanda</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
