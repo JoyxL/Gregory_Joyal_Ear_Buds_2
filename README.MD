@@ -1,0 +1,20 @@
+# Gregory_joyal_fip
+The assignment is to create a responsive website for **Orange Panda** earbuds, featuring a 3D model viewer, an X-ray view of internal components, and
+engaging scroll animations, showcasing the product innovatively across all devices.
+
+## Installation
+
+no installation process
+
+## Usage
+
+this website holds information about couplesresort.ca
+
+## Credits
+
+TODO: couplesresort.ca
+      pexels.com
+
+## License
+
+TODO: MIT lisence
